@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                         isGameOver = true
                         playAgainButton.visibility = View.VISIBLE
                     } else if (isDraw()) {
-                        statusTextView.text = "It's a Draw!"
+                        statusTextView.text = "It's a Draw!!!"
                         isGameOver = true
                         playAgainButton.visibility = View.VISIBLE
                     } else {
