@@ -8,26 +8,27 @@
         android:id="@+id/mainMenuLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:background="@color/black"
         android:gravity="center"
-        android:visibility="visible"
-        android:background="@color/black">
+        android:orientation="vertical"
+        android:visibility="visible">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome to Tic Tac Toe!"
-            android:textSize="24sp"
             android:padding="16dp"
-            android:textColor="@color/white"/>
+            android:text="@string/Welcome_title"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/startGameButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Start Game"
             android:backgroundTint="@color/white"
-            android:textColor="@color/black"/>
+            android:text="@string/Start_Game"
+            android:textColor="@color/black" />
+
     </LinearLayout>
 
     <!-- Game Screen Layout -->
@@ -35,50 +36,52 @@
         android:id="@+id/gameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:background="@color/black"
         android:gravity="center"
-        android:visibility="gone"
-        android:background="@color/black">
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <!-- Existing Game Board -->
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/Player_X_Turn"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
         <GridLayout
             android:id="@+id/gridLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:columnCount="3"
-            android:rowCount="3"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:rowCount="3">
             <!-- Buttons for game (same as before) -->
         </GridLayout>
 
         <!-- Game Status -->
-        <TextView
-            android:id="@+id/statusTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Player X's Turn"
-            android:textSize="18sp"
-            android:padding="16dp"
-            android:textColor="@color/white"/>
 
         <!-- Play Again Button -->
         <Button
             android:id="@+id/playAgainButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Play Again"
-            android:visibility="gone"
             android:backgroundTint="@color/white"
-            android:textColor="@color/black"/>
+            android:text="@string/Play_Again"
+            android:textColor="@color/black"
+            android:visibility="gone" />
 
         <!-- Go Back to Main Menu Button -->
         <Button
             android:id="@+id/goBackButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Go Back to Main Menu"
-            android:visibility="gone"
             android:backgroundTint="@color/white"
-            android:textColor="@color/black"/>
+            android:text="@string/Go_Back_to_Main_Menu"
+            android:textColor="@color/black"
+            android:visibility="gone" />
     </LinearLayout>
 </FrameLayout>

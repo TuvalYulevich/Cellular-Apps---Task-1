@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private var gameBoard = Array(3) { arrayOfNulls<String>(3) }
     private var currentPlayer = "X"
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
